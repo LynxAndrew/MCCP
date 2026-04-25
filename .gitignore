@@ -4,13 +4,13 @@
 
 !datapacks
 !mods
-!/config/
+!config
 !resourcepacks
 !shaderpacks
 
 !datapacks/**
 !mods/**
-!/config/**
+!config/**
 !resourcepacks/**
 !shaderpacks/**
 
