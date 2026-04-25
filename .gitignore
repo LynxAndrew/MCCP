@@ -1,20 +1,16 @@
 *
 !/.gitignore
 
-#!/mods/
-#!/config/
-#!/resourcepacks/
-#!/shaderpacks/
-
-#!/**
 
 !datapacks
 !mods
+!/config/
 !resourcepacks
 !shaderpacks
 
 !datapacks/**
 !mods/**
+!/config/**
 !resourcepacks/**
 !shaderpacks/**
 
