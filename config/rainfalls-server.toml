@@ -1,0 +1,39 @@
+[timing]
+	#Multiplies the cooldown between rain-generated water placements.
+	#1.0 = default behavior.
+	#Values below 1.0 increase frequency; values above 1.0 decrease it.
+	#This multiplier is applied after the base cooldown range below is chosen.
+	# Default: 1.0
+	# Range: 0.05 ~ 10.0
+	rainEventTimeMultiplier = 1.0
+	#Minimum base cooldown in seconds before multiplier is applied.
+	#Default: 120 seconds (2 minutes).
+	# Default: 120
+	# Range: 1 ~ 3600
+	playerCooldownMinSeconds = 120
+	#Maximum base cooldown in seconds before multiplier is applied.
+	#Default: 240 seconds (4 minutes).
+	#Should be greater than or equal to playerCooldownMinSeconds.
+	# Default: 240
+	# Range: 1 ~ 3600
+	playerCooldownMaxSeconds = 240
+	#Absolute minimum cooldown floor in seconds before multiplier is applied.
+	#This prevents the final cooldown from becoming too small.
+	#Default: 60 seconds (1 minute).
+	# Default: 60
+	# Range: 1 ~ 3600
+	playerCooldownMinCapSeconds = 60
+
+[chances]
+	#Chance to place a water source when a valid position is found.
+	#0.0 = never place water
+	#1.0 = always place water
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	waterPlacementChance = 0.2
+	#Chance to fill a cauldron when found under rain.
+	#0.0 = never fill
+	#1.0 = always fill
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	cauldronFillChance = 0.35

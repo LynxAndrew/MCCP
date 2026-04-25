@@ -1,0 +1,17 @@
+#Maximum raycast distance in blocks. Higher values let the sun reach mobs from further away.
+#Default: 384, Range: 16-512
+# Default: 384
+# Range: 16 ~ 512
+rayDistance = 384
+#Ticks between sun exposure checks per mob.
+#1 = every tick (20/sec), 10 = twice/sec, 20 = once/sec.
+#Default: 10, Range: 1-40
+# Default: 10
+# Range: 1 ~ 40
+checkInterval = 10
+#Spacing between debug particles along the ray, in blocks.
+#Smaller = more particles (denser ray visualization).
+#Default: 1.5, Range: 0.5-5.0
+# Default: 1.5
+# Range: 0.5 ~ 5.0
+particleDensity = 1.5
