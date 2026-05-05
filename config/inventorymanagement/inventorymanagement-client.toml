@@ -19,7 +19,7 @@
 		#Default X offset for button position
 		# Default: -4
 		# Range: -100 ~ 100
-		defaultOffsetX = -4
+		defaultOffsetX = -6
 
 	[general.sorting]
 		#Sorting mode for inventory sorting
