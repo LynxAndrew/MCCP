@@ -18,11 +18,11 @@
 	# Stamina recovered per tick
 	# Default: 0.45
 	# Range: 0.0 ~ 100.0
-	recoveryPerTick = 0.45
+	recoveryPerTick = 0.5
 	# Multiplier for recovery when standing completely still
 	# Default: 1.45
 	# Range: 1.0 ~ 10.0
-	recoveryRestMult = 1.45
+	recoveryRestMult = 1.0
 	# Multiplier for recovery when hanging on a ladder/vine (slow climbing or not moving)
 	# Default: 0.4
 	# Range: 0.0 ~ 10.0
@@ -34,7 +34,7 @@
 	# Ticks before stamina starts regenerating after action (20 ticks = 1 sec)
 	# Default: 50
 	# Range: 0 ~ 2000
-	recoveryDelay = 50
+	recoveryDelay = 40
 
 ["Depletion Rates"]
 	# Stamina drained per tick while sprinting. Set to 0.0 to disable. Set to negative to gain stamina
@@ -64,11 +64,11 @@
 	# Stamina drained per tick while swimming. Set to 0.0 to disable. Set to negative to gain stamina
 	# Default: 0.05
 	# Range: -100.0 ~ 100.0
-	depletionSwim = 0.05
+	depletionSwim = 0.1
 	# Stamina drained per tick while climbing. Set to 0.0 to disable. Set to negative to gain stamina
 	# Default: 0.7
 	# Range: -100.0 ~ 100.0
-	depletionClimb = 0.7
+	depletionClimb = 0.1
 	# Ticks to disable an item if you run out of stamina while using it.
 	# Default: 120
 	# Range: 0 ~ 1200
@@ -88,11 +88,11 @@
 	# The minimum possible stamina cost multiplier from weight scaling. Prevents light weapons from becoming free.
 	# Default: 0.4
 	# Range: 0.0 ~ 1.0
-	attackWeightMinMultiplier = 0.4
+	attackWeightMinMultiplier = 0.5
 	# The maximum possible stamina cost multiplier from weight scaling. Prevents excessively heavy weapons from draining all stamina instantly.
 	# Default: 5.0
 	# Range: 1.0 ~ 100.0
-	attackWeightMaxMultiplier = 5.0
+	attackWeightMaxMultiplier = 10.0
 	#
 	# If true, the stamina drained per missed attack is modified by the weapon's weight.
 	missedAttackCostScalesWithWeight = true
@@ -107,17 +107,17 @@
 	# The minimum possible stamina cost multiplier for missed attacks.
 	# Default: 0.4
 	# Range: 0.0 ~ 1.0
-	missedAttackWeightMinMultiplier = 0.4
+	missedAttackWeightMinMultiplier = 0.5
 	# The maximum possible stamina cost multiplier for missed attacks.
 	# Default: 5.0
 	# Range: 1.0 ~ 100.0
-	missedAttackWeightMaxMultiplier = 5.0
+	missedAttackWeightMaxMultiplier = 10.0
 
 ["Fatigue & Limits"]
 	# Ticks spent in critical stamina (red zone) before fatigue penalty begins (180 ticks = 9s)
 	# Default: 180
 	# Range: 0 ~ 10000
-	fatigueDurationToPenalty = 180
+	fatigueDurationToPenalty = 100
 	# The absolute floor for Max Stamina (Stamina bar cannot shrink smaller than this)
 	# Default: 10.0
 	# Range: 1.0 ~ 100.0
@@ -125,17 +125,17 @@
 	# Percentage of Max Stamina where fatigue penalty starts (0.25 = 25%)
 	# Default: 0.25
 	# Range: 0.0 ~ 1.0
-	fatigueThreshold = 0.25
+	fatigueThreshold = 0.3
 	# Ticks to wait after leaving red zone before penalty recovers
 	# Default: 100
 	# Range: 0 ~ 2000
-	penaltyRecoveryDelay = 100
+	penaltyRecoveryDelay = 400
 	#
 	#
 	# Base rate for exponential penalty increase
 	# Default: 0.02
 	# Range: 0.0 ~ 10.0
-	penaltyBaseRate = 0.02
+	penaltyBaseRate = 0.05
 	# Divisor for exponential curve (Lower = Steeper curve)
 	# Default: 150.0
 	# Range: 1.0 ~ 1000.0
@@ -147,21 +147,21 @@
 	# How much penalty accumulates per tick when conditions worsen (0.1 = 2.0 penalty per second)
 	# Default: 0.1
 	# Range: 0.0 ~ 100.0
-	penaltyBuildupRate = 0.1
+	penaltyBuildupRate = 0.05
 	#
 	#
 	# Maximum reduction to Max Stamina caused by physical exhaustion
 	# Default: 30.0
 	# Range: 0.0 ~ 100.0
-	maxExertionPenalty = 30.0
+	maxExertionPenalty = 40.0
 	# Maximum reduction to Max Stamina caused by starvation
 	# Default: 30.0
 	# Range: 0.0 ~ 100.0
-	maxHungerPenalty = 30.0
+	maxHungerPenalty = 40.0
 	# Food level at which stamina penalty begins (6 = 3 shanks)
 	# Default: 6
 	# Range: 0 ~ 20
-	hungerPenaltyThreshold = 6
+	hungerPenaltyThreshold = 8
 
 	["Fatigue & Limits"."Sleep Mechanics"]
 		# DEFAULT: Fatigue decays over time, sleeping, and eating consumables reduces it.
@@ -172,7 +172,7 @@
 		# Set to a high number (e.g. 100.0) to fully clear it.
 		# Default: 20.0
 		# Range: 0.0 ~ 1000.0
-		sleepFatigueReduction = 20.0
+		sleepFatigueReduction = 100.0
 
 ["Bonus Stamina System"]
 	# If true, restoring stamina (INSTANT) past the Max Stamina limit will convert the excess into Bonus Stamina.
@@ -187,7 +187,7 @@
 	# Set to 0 to make it decay immediately and always.
 	# Default: 20
 	# Range: 0 ~ 72000
-	bonusStaminaDecayDelay = 20
+	bonusStaminaDecayDelay = 200
 	# If true, the decay rate is treated as a percentage of current bonus stamina (Exponential decay).
 	# This makes decay faster when you have lots of bonus, and slower when you have little.
 	# If false, the decay rate is a flat amount subtracted per tick (Linear decay).
@@ -216,7 +216,7 @@
 	# How often (in ticks) the drag physics are applied (I suggest changing this over elytra speed retainment). Higher = less frequent slowdown and longer gliding. 1 = Every tick.
 	# Default: 3
 	# Range: 1 ~ 100
-	exhaustedElytraTickInterval = 3
+	exhaustedElytraTickInterval = 20
 	# Extra vertical gravity applied per tick when stalling. (Negative value pulls down).
 	# Default: -0.025
 	# Range: -10.0 ~ 0.0
@@ -232,15 +232,15 @@
 	# Weight at which the penalty begins to apply (0% penalty).
 	# Default: 125.0
 	# Range: 0.0 ~ 10000.0
-	weightPenaltyThreshold = 125.0
+	weightPenaltyThreshold = 50.0
 	# Weight at which the penalty reaches maximum (100% penalty).
 	# Default: 400.0
 	# Range: 1.0 ~ 10000.0
-	weightPenaltyLimit = 400.0
+	weightPenaltyLimit = 600.0
 	# Maximum amount of Max Stamina removed when at full weight limit.
 	# Default: 40.0
 	# Range: 0.0 ~ 100.0
-	maxWeightPenaltyAmount = 40.0
+	maxWeightPenaltyAmount = 30.0
 	# Maximum depth for recursive weight calculation (Backpacks inside backpacks). Higher values may cause lag.
 	# Default: 3
 	# Range: 0 ~ 10
