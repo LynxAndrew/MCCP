@@ -80,11 +80,11 @@
 	#2: When in rain, torches in inventory will be extinguished or smolder
 	# Default: 2
 	# Range: 0 ~ 2
-	invExtinguishInRain = 2
+	invExtinguishInRain = 1
 	#How many torches are crafted.
 	# Default: 1
 	# Range: > 1
-	torchCraftAmount = 1
+	torchCraftAmount = 4
 
 #Lantern Settings
 [lantern]
@@ -128,7 +128,7 @@
 	#Percentage chance that the fire starter works
 	# Default: 0.33
 	# Range: 0.0 ~ 1.0
-	starterSuccessChance = 0.33
+	starterSuccessChance = 0.4
 
 #Campfire Settings
 [campfire]
