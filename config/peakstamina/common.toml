@@ -44,7 +44,7 @@
 	# Stamina drained per jump. Set to 0.0 to disable. Set to negative to gain stamina
 	# Default: 0.85
 	# Range: -100.0 ~ 100.0
-	depletionJump = 0.5
+	depletionJump = 0.0
 	# Base stamina drained per attack. Set to 0.0 to disable. Set to negative to gain stamina
 	# Default: 3.45
 	# Range: -100.0 ~ 100.0
