@@ -11,7 +11,7 @@
 	can_Dodge = true
 	can_FastRun = true
 	can_FastSwim = true
-	can_Flipping = false
+	can_Flipping = true
 	can_HangDown = true
 	can_HorizontalWallRun = true
 	can_JumpFromBar = true
@@ -88,7 +88,7 @@
 		enable_ChargeJumpAnimator = true
 		enable_ClimbUpAnimator = true
 		enable_ClingToCliffAnimator = true
-		enable_CrawlAnimator = true
+		enable_CrawlAnimator = false
 		enable_DiveAnimationHostAnimator = true
 		enable_DiveIntoWaterAnimator = true
 		enable_DodgeAnimator = true
@@ -119,7 +119,7 @@
 	crawl_control = "PressKey"
 	#Control of Flipping
 	#Allowed Values: PressRightAndLeft, TapMovementAndJump, PressFlippingKey
-	flip_control = "TapMovementAndJump"
+	flip_control = "PressRightAndLeft"
 	#Control of Horizontal Wall Run
 	#Allowed Values: PressKey, Auto
 	h-wall-run_control = "PressKey"
@@ -130,17 +130,17 @@
 	#Allowed Values: PressKey, Toggle
 	cling-to-cliff_control = "PressKey"
 	#Enable double-tapping ctrl for Dodge
-	enable_double_tapping_for_dodge = false
+	enable_double_tapping_for_dodge = true
 	#Enable cooldown of wall jump
 	enable_wall_jump_cooldown = true
 	#Enable Crawl in air
-	enable_crawl_in_air = true
+	enable_crawl_in_air = false
 	#Enable Vault in air
 	enable_vault_in_air = true
 	#Enable getting off steps while doing dodge
 	can_get_off_steps_while_dodge = false
 	#Enable Roll when creative mode (experimental)
-	enable_roll_creative = false
+	enable_roll_creative = true
 	#Make Vault need Vault Key Pressed
 	vault_needs_key_pressed = false
 	#Make HideInBlock need player sneaking

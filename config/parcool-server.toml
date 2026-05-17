@@ -2,35 +2,6 @@
 	#Whether these limitations will be imposed to players
 	limitation_imposed = false
 
-	[Limitations.Action_Permissions]
-		permit_BreakfallReady = true
-		permit_CatLeap = true
-		permit_ChargeJump = true
-		permit_ClimbPoles = true
-		permit_ClimbUp = true
-		permit_ClingToCliff = true
-		permit_HideInBlock = true
-		permit_Crawl = true
-		permit_Dive = true
-		permit_Dodge = true
-		permit_FastRun = true
-		permit_FastSwim = true
-		permit_Flipping = true
-		permit_HangDown = true
-		permit_HorizontalWallRun = true
-		permit_JumpFromBar = true
-		permit_QuickTurn = true
-		permit_RideZipline = true
-		permit_Roll = true
-		permit_SkyDive = true
-		permit_Slide = true
-		permit_Tap = true
-		permit_Vault = true
-		permit_VerticalWallRun = true
-		permit_WallJump = true
-		permit_WallSlide = true
-		permit_StartSwimByCrawl = true
-
 	[Limitations.Stamina]
 		#Allowed Values: NONE, PARCOOL, HUNGER, PARAGLIDER, EPIC_FIGHT
 		forced_stamina = "NONE"
@@ -46,6 +17,12 @@
 		max_stamina_recovery_limit = 2147483647
 
 		[Limitations.Stamina.Least_Consumption]
+			# Default: 3
+			# Range: 0 ~ 10000
+			stamina_consumption_of_FastSwim = 6
+			# Default: 2
+			# Range: 0 ~ 10000
+			stamina_consumption_of_FastRun = 4
 			# Default: 0
 			# Range: 0 ~ 10000
 			stamina_consumption_of_BreakfallReady = 0
@@ -76,12 +53,6 @@
 			# Default: 80
 			# Range: 0 ~ 10000
 			stamina_consumption_of_Dodge = 80
-			# Default: 2
-			# Range: 0 ~ 10000
-			stamina_consumption_of_FastRun = 2
-			# Default: 3
-			# Range: 0 ~ 10000
-			stamina_consumption_of_FastSwim = 3
 			# Default: 80
 			# Range: 0 ~ 10000
 			stamina_consumption_of_Flipping = 80
@@ -127,6 +98,35 @@
 			# Default: 0
 			# Range: 0 ~ 10000
 			stamina_consumption_of_StartSwimByCrawl = 0
+
+	[Limitations.Action_Permissions]
+		permit_BreakfallReady = true
+		permit_CatLeap = true
+		permit_ChargeJump = true
+		permit_ClimbPoles = true
+		permit_ClimbUp = true
+		permit_ClingToCliff = true
+		permit_HideInBlock = true
+		permit_Crawl = true
+		permit_Dive = true
+		permit_Dodge = true
+		permit_FastRun = true
+		permit_FastSwim = true
+		permit_Flipping = true
+		permit_HangDown = true
+		permit_HorizontalWallRun = true
+		permit_JumpFromBar = true
+		permit_QuickTurn = true
+		permit_RideZipline = true
+		permit_Roll = true
+		permit_SkyDive = true
+		permit_Slide = true
+		permit_Tap = true
+		permit_Vault = true
+		permit_VerticalWallRun = true
+		permit_WallJump = true
+		permit_WallSlide = true
+		permit_StartSwimByCrawl = true
 
 	[Limitations.Control]
 		#Allow disabling cooldown of wall jump
