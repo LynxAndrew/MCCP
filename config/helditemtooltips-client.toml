@@ -50,7 +50,7 @@ respect_hidden_tooltip = true
 	[components.lore]
 		#Should this tooltip component be included when rendering held item tooltips.
 		#Default Value: true
-		include = true
+		include = false
 		#Priority for rendering this tooltip. When not enough lines are available (like an item with enchantments), components with a low priority will be skipped.
 		#Default Value: 50
 		# Default: 50
@@ -91,7 +91,7 @@ respect_hidden_tooltip = true
 	[components.additional]
 		#Should this tooltip component be included when rendering held item tooltips.
 		#Default Value: true
-		include = true
+		include = false
 		#Priority for rendering this tooltip. When not enough lines are available (like an item with enchantments), components with a low priority will be skipped.
 		#Default Value: 90
 		# Default: 90
@@ -214,7 +214,7 @@ respect_hidden_tooltip = true
 	[components.enchantments]
 		#Should this tooltip component be included when rendering held item tooltips.
 		#Default Value: true
-		include = true
+		include = false
 		#Priority for rendering this tooltip. When not enough lines are available (like an item with enchantments), components with a low priority will be skipped.
 		#Default Value: 70
 		# Default: 70
@@ -255,7 +255,7 @@ respect_hidden_tooltip = true
 	[components.jukebox]
 		#Should this tooltip component be included when rendering held item tooltips.
 		#Default Value: true
-		include = true
+		include = false
 		#Priority for rendering this tooltip. When not enough lines are available (like an item with enchantments), components with a low priority will be skipped.
 		#Default Value: 45
 		# Default: 45
@@ -296,7 +296,7 @@ respect_hidden_tooltip = true
 	[components.trim]
 		#Should this tooltip component be included when rendering held item tooltips.
 		#Default Value: true
-		include = true
+		include = false
 		#Priority for rendering this tooltip. When not enough lines are available (like an item with enchantments), components with a low priority will be skipped.
 		#Default Value: 60
 		# Default: 60
@@ -337,7 +337,7 @@ respect_hidden_tooltip = true
 	[components.dye_color]
 		#Should this tooltip component be included when rendering held item tooltips.
 		#Default Value: true
-		include = true
+		include = false
 		#Priority for rendering this tooltip. When not enough lines are available (like an item with enchantments), components with a low priority will be skipped.
 		#Default Value: 40
 		# Default: 40
@@ -460,7 +460,7 @@ respect_hidden_tooltip = true
 	[components.stored_enchantments]
 		#Should this tooltip component be included when rendering held item tooltips.
 		#Default Value: true
-		include = true
+		include = false
 		#Priority for rendering this tooltip. When not enough lines are available (like an item with enchantments), components with a low priority will be skipped.
 		#Default Value: 70
 		# Default: 70
@@ -501,7 +501,7 @@ respect_hidden_tooltip = true
 	[components.unbreakable]
 		#Should this tooltip component be included when rendering held item tooltips.
 		#Default Value: true
-		include = true
+		include = false
 		#Priority for rendering this tooltip. When not enough lines are available (like an item with enchantments), components with a low priority will be skipped.
 		#Default Value: 55
 		# Default: 55
